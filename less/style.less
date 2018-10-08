@@ -1,0 +1,49 @@
+// out: ../css/style.css, compress: false, sourceMap: true
+// relativeUrls: true
+@import "./modules/vars";
+
+/*
+    === CSS Resets ===
+*/
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+/*
+    --- Break Points ---
+*/
+
+.container {
+  margin: 0 auto;
+  //padding:0 10px;
+  width: @var-width-lg; 
+  transition:all .1s;
+  vertical-align: middle;
+}
+@media only screen and (max-width: @var-break-point-lg) {
+  .container{
+    width:@var-width-md;
+  }
+}
+@media only screen and (max-width: @var-break-point-md) {
+  .container{
+    width:@var-width-sm;
+  }
+}
+@media only screen and (max-width: @var-break-point-sm) {
+  .container{
+    width:100%;
+  }
+}
+@import "./modules/nav";
+@import "./modules/btns";
+@import "./modules/sections";
+@import "./modules//imgs";

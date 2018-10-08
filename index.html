@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <p>Hello world</p>
+    <header id="header">
+        <div class="container">
+            <img id="img-me" class="profile-pic round" src="imgs/me.jpg" />
+            <nav>
+
+                <a id="my-name" href="#top" class="scroll-link">
+                    Tyler Sells
+                </a>
+                <ul>
+                    <li><a href="#home" class="scroll-link">Home</a>
+                        <span class="underline"></span>
+                    </li>
+                    <li><a href="#about" class="scroll-link">About</a>
+                        <span class="underline"></span>
+                    </li>
+                    <li><a href="#contact" class="scroll-link">Contact</a>
+                        <span class="underline"></span>
+                    </li>
+                </ul>
+                <div id="burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="top" class="img-parallax" data-url="../imgs/buildings.jpg" data-height="100vh"></div>
+    <div id="home" class="img-parallax" data-url="../imgs/textured.jpg" data-height="100vh">
+        <div class="spanner">
+            <div class="container">
+                <section>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="img-parallax" data-url="../imgs/roses.jpg" data-height="100vh">
+        <div class="spanner">
+            <div class="container">
+                <section>
+                    <br>
+                    <br>
+                    <br><br><br>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="img-parallax" data-url="../imgs/abstract.jpg" data-height="100vh">
+        <div class="spanner">
+            <div class="container">
+                <section>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>

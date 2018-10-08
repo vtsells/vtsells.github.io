@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Wire+One');
+@import url('https://fonts.googleapis.com/css?family=Geo');
+/*
+    === CSS Resets ===
+*/
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+/*
+    --- Break Points ---
+*/
+.container {
+  margin: 0 auto;
+  width: 1250px;
+  transition: all .1s;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 950px;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .container {
+    width: 590px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .container {
+    width: 100%;
+  }
+}
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  font: 30px "Geo";
+  background: linear-gradient(rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.9));
+  transition: background 0.2s;
+}
+header #burger {
+  display: none;
+}
+header #my-name {
+  line-height: 100px;
+  font-size: 90px;
+  color: #fff;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+header #my-name:hover {
+  color: #eee;
+}
+header nav {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  transition: all .5s;
+}
+header nav li {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+header nav li a {
+  position: relative;
+  color: #ffffff;
+  line-height: 100px;
+  padding: 0 15px;
+}
+header nav li a:hover ~ .underline {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+header .underline {
+  position: absolute;
+  width: 100%;
+  transform-origin: right;
+  transform: scaleX(0);
+  height: 2px;
+  left: -2px;
+  bottom: 30%;
+  background: #ffffff;
+  transition: transform 0.5s;
+  z-index: -1;
+}
+header.fixed {
+  position: fixed;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.9));
+}
+header.fixed #my-name {
+  font-size: 30px;
+}
+header.fixed #img-me {
+  display: none;
+}
+@media only screen and (max-width: 1030px) {
+  header #my-name {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  header nav ul {
+    display: none;
+  }
+  header #burger {
+    display: block;
+    align-self: center;
+    cursor: pointer;
+  }
+  header #burger.animate .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  header #burger.animate .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header #burger.animate .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  header .bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  header.expanded.fixed ul {
+    top: 100px;
+  }
+  header.expanded nav {
+    position: relative;
+  }
+  header.expanded nav ul {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: -150px;
+    width: 100%;
+  }
+  header.expanded nav ul li {
+    display: flex;
+    align-items: stretch;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+  header.expanded nav ul li a {
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+  }
+  header.expanded nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  header.expanded .underline {
+    display: none;
+  }
+}
+.btn {
+  display: block;
+}
+section {
+  border: 1px solid #f00;
+}
+.spanner {
+  background: url("../../imgs/clouds.png");
+  display: flex;
+  min-height: inherit;
+  min-width: inherit;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.img-parallax {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.profile-pic.round {
+  border-radius: 500px;
+}
+#img-me {
+  position: absolute;
+  border: 20px solid rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: 330px;
+  box-shadow: 0 0 50px #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s;
+  filter: grayscale(50%);
+}
+#img-me:hover {
+  filter: grayscale(0);
+  width: 310px;
+}
+@media only screen and (max-width: 1030px) {
+  #img-me {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=./style.css.map */
