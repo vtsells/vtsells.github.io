@@ -90,9 +90,10 @@ const parallaxImages = (()=>{
 
 const header = (()=>{
     const header = document.getElementById("header");
-    let bottomX = header.offsetTop+header.offsetHeight-varNavHeight;
+    const navMobileOffset = (isMobile)?varNavHeight-56:varNavHeight;
+    let bottomX = header.offsetTop+header.offsetHeight-navMobileOffset;
     window.onresize = ()=>{
-        bottomX = header.offsetTop+window.innerHeight-varNavHeight;
+        bottomX = header.offsetTop+window.innerHeight-navMobileOffset;
     }
     window.onscroll = ()=>{
         if(window.pageYOffset>bottomX)
