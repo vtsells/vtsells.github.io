@@ -1,5 +1,5 @@
 const varNavHeight = 50;
-
+const isMobile = (typeof window.orientation!=="undefined");
 //scroller module.  creates scrolling function and initiates all .scroll-link elements
 const scroller = (()=>{
     (()=>{
@@ -80,7 +80,10 @@ const parallaxImages = (()=>{
     for(let i=0;i<imgs.length;i++){
         const img = imgs[i];
         img.style.backgroundImage = `url(${img.dataset.url})`;
-        img.style.minHeight = `${img.dataset.height}`;
+        if(isMobile)
+            img.style.height = `calc(${img.dataset.height} - 56px)`;
+        else
+            img.style.height = `${img.dataset.height}`;
     };
     return imgs;
 })();
