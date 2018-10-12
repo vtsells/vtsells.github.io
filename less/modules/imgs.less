@@ -12,6 +12,11 @@
         border-radius:500px;
     }
 }
+img.responsive{
+    min-width:200px;
+    height:auto;
+    max-width:100%;
+}
 #img-me{
     position: absolute;
     border:20px solid rgba(0,0,0,.2);
@@ -27,6 +32,15 @@
     &:hover{
         filter:grayscale(0);
         width:310px;
+    }
+}
+.img-filler{
+    background:@var-theme-dark;
+    
+    vertical-align: middle;
+    img{
+        display: block;
+        margin:auto;
     }
 }
 @media only screen and (max-width: @var-break-point-md) {

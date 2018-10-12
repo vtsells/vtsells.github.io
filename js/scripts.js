@@ -1,4 +1,4 @@
-const varNavHeight = 100;
+const varNavHeight = 50;
 
 //scroller module.  creates scrolling function and initiates all .scroll-link elements
 const scroller = (()=>{
@@ -109,5 +109,41 @@ const burger = (()=>{
     return burger;
 })();
 
-
+const skillBlurbs = (()=>{
+    const skillsList = document.getElementById("skills-list");
+    const lis = skillsList.getElementsByTagName("li");
+    let currentSelected = 0;
+    for(let i=0;i<lis.length;i++){
+        lis[i].addEventListener("mouseenter",function(){
+            
+            const blurbShown = document.querySelector("p.skills-blurb.show");
+            if(blurbShown !== null)
+                 blurbShown.classList.remove("show");
+                 blurbShown.style.height=0; 
+            const blurbTarget = document.getElementById(this.dataset.target);
+            if(blurbTarget!== null)
+                blurbTarget.classList.add("show");
+                blurbTarget.style.height = `${blurbTarget.scrollHeight}px`;
+            
+            const activeLi = skillsList.querySelector("li.active");
+            if(activeLi!==null) activeLi.classList.remove("active");
+            this.classList.add("active");
+            currentSelected = i;
+        });
+    }
+    var event = new MouseEvent("mouseenter",{
+        "view":window,
+        "bubbles":true,
+        "cancelable":true
+    })
+    cycleBlurbs(lis);
+    function cycleBlurbs(lis){
+        lis[currentSelected].dispatchEvent(event);
+        currentSelected++;
+        if(currentSelected>=lis.length) currentSelected=0;
+        setTimeout(cycleBlurbs,8000, lis)
+    };
+    const skillsBlurbs = skillsList.querySelectorAll(".skills-blurb");
+    
+})();
 
