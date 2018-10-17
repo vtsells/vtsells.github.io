@@ -20,6 +20,17 @@ a {
 * {
   box-sizing: border-box;
 }
+.watermark {
+  background-image: url("../imgs/under-construction.svg");
+  background-size: 200px 200px;
+  position: fixed;
+  background-color: #000000;
+  opacity: .2;
+  z-index: 1000;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
 /*
     --- Break Points ---
 */
