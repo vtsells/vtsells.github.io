@@ -120,7 +120,7 @@ header .underline {
   transform: scaleX(0);
   height: 2px;
   left: -2px;
-  bottom: 30%;
+  bottom: 20%;
   background: #ffffff;
   transition: transform 0.5s;
   z-index: -1;
@@ -377,7 +377,7 @@ ul.list {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 630px) {
   ul.list {
@@ -395,7 +395,7 @@ ul.list {
   position: relative;
   height: 100%;
   width: 100%;
-  background: rgba(47, 46, 100, 0.95);
+  background: linear-gradient(to bottom right, rgba(36, 10, 85, 0.9), rgba(0, 0, 0, 0)), linear-gradient(to bottom left, rgba(10, 59, 85, 0.9), rgba(0, 0, 0, 0)), linear-gradient(to top right, rgba(85, 10, 59, 0.9), rgba(0, 0, 0, 0));
   margin: auto;
   color: #ffffff;
   padding: 15px;
@@ -406,14 +406,15 @@ ul.list {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  background: #0e0e1e;
+  background: #000000;
   border-radius: 50px;
 }
 .widget-skills .percent {
   display: inline-block;
   height: 5px;
   width: 0;
-  background: #becbec;
+  background: linear-gradient(to right, #4b15b0, #e9a7d3);
+  box-shadow: 0 0 5px #4b15b0;
   transition: all 1s ease-in;
   border-radius: 50px;
 }
