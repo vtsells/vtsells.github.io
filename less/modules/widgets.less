@@ -1,0 +1,155 @@
+// main: ../style.less
+.widget-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(
+      to bottom right,
+      fadeout(@var-skills-widget-dark, 10%),
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      to bottom left,
+      spin(fadeout(@var-skills-widget-dark, 10%), 300),
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      to top right,
+      spin(fadeout(@var-skills-widget-dark, 10%), -300),
+      rgba(0, 0, 0, 0)
+    );
+  margin: auto;
+  color: @var-theme-light;
+  padding: 15px;
+  box-sizing: border-box;
+  .bar {
+    // opacity: 0;//remove
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background: darken(@var-skills-widget-dark, 20%);
+    border-radius: 50px;
+  }
+  .percent {
+    display: inline-block;
+    height: 5px;
+    width: 0;
+    background: linear-gradient(
+      to right,
+      lighten(@var-skills-widget-dark, 20%),
+      @var-skills-widget-light
+    );
+    box-shadow: 0 0 5px lighten(@var-skills-widget-dark, 20%);
+    transition: all .8s ease-in;
+    border-radius: 50px;
+    &:after {
+      content: attr(data-percent) + "%";
+      position: absolute;
+      right: 15px;
+      margin-top: -28px;
+    }
+  }
+  h1,
+  h5 {
+    padding: 0;
+    margin: 5px;
+    font-weight: 100;
+  }
+}
+.widget-contact {
+  //background: @var-contact-widget-light;
+  color:@var-theme-light;
+  background: linear-gradient(
+    to bottom right,
+    fadeout(@var-contact-widget-dark, 10%),
+    rgba(0, 0, 0, 0)
+  ),
+  linear-gradient(
+    to bottom left,
+    spin(fadeout(@var-contact-widget-dark, 10%), 300),
+    rgba(0, 0, 0, 0)
+  ),
+  linear-gradient(
+    to top right,
+    spin(fadeout(@var-contact-widget-dark, 10%), -300),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 10px;
+  * {
+    box-sizing: content-box;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+  }
+  label {
+    width: 30%;
+    text-align: right;
+    margin-left: -20px;
+  }
+  input,
+  textarea {
+    all: unset;
+  }
+  label,
+  input,
+  textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    margin-left: 10px;
+    padding: 5px 5px 0 5px;
+  }
+  textarea {
+    width: 70%;
+    background: @var-theme-dark;
+    resize: vertical;
+    max-height: 500px;
+    color: @var-theme-light;
+    //white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  input[type="text"],
+  input[type="email"] {
+    border-bottom:3px solid #fff;
+    //background: @var-theme-dark;
+    color: @var-theme-light;
+    width: 70%;
+    
+  }
+  input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    background:@var-contact-widget-dark;
+    color:@var-theme-light;
+    padding-bottom:5px;
+    &:hover{
+        background:lighten(@var-contact-widget-dark,5%);
+    }
+  }
+}
+@media only screen and (max-width: @var-break-point-sm) {
+  .widget-contact {
+    label {
+      width: 100%;
+      text-align: left;
+      margin-left: 0;
+      margin-right:0;
+    }
+    input,
+    textarea {
+      width: 100%;
+      margin-left: 0;
+      margin-right:0;
+    }
+  }
+}
