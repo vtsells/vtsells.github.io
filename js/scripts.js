@@ -20,6 +20,8 @@ const scroller = (() => {
       const link = scrollLinks[i];
       link.addEventListener("click", function(e) {
         e.preventDefault();
+        burger.classList.remove("animate");
+        header.classList.remove("expanded");
         const targetId = this.getAttribute("href");
         scrollTo(targetId);
       });
@@ -101,6 +103,7 @@ const header = (() => {
     if (window.pageYOffset > bottomX) header.classList.add("fixed");
     else header.classList.remove("fixed");
   });
+  
   return header;
 })();
 

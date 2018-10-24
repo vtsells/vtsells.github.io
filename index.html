@@ -13,7 +13,7 @@
     <div class="watermark"></div>
     <header id="header">
         <div class="container">
-            <img id="img-me" class="profile-pic round" src="imgs/me.jpg" />
+            <img id="img-me" class="profile-pic impact-border" src="imgs/me.jpg" />
             <nav>
 
                 <a id="my-name" href="#top" class="scroll-link">
@@ -23,10 +23,10 @@
                     <li><a href="#dev-skills" class="scroll-link">Dev Skills</a>
                         <span class="underline"></span>
                     </li>
-                    <li><a href="#about" class="scroll-link">About</a>
+                    <li><a href="#portfolio" class="scroll-link">Portfolio</a>
                         <span class="underline"></span>
                     </li>
-                    <li><a href="#contact" class="scroll-link">Contact Me</a>
+                    <li><a href="#contact-me" class="scroll-link">Contact Me</a>
                         <span class="underline"></span>
                     </li>
                 </ul>
@@ -48,10 +48,13 @@
                     <h1>Skills</h1>
                     <p>This is where I'm at with the languages I'm most comfortable with. These rankings are based of
                         several projects (mostly full-stack ASP.NET MVC apps) that I have done and a few personal
-                        projects that sit on <a href="https://www.github.com/vtsells" target="_blank">Github</a>. It is
-                        also worth mentioning that this site uses no frameworks, libraries, or CDNs, with the exception
-                        of <a href="https://fonts.google.com" target="_blank">Google Fonts</a>. I used
-                        LESS to make CSS more enjoyable, but that's about it.</p>
+                        projects that sit on <a href="https://www.github.com/vtsells" target="_blank">Github</a>.
+                        <span class="lg-only">
+                            It is
+                            also worth mentioning that this site uses no frameworks, libraries, or CDNs, with the
+                            exception
+                            of <a href="https://fonts.google.com" target="_blank">Google Fonts</a>. I used
+                            LESS to make CSS more enjoyable, but that's about it.</span></p>
                     <div class="widget-skill">
                         <h5>JavaScript</h5>
                         <div class="bar">
@@ -127,7 +130,7 @@
         </div>
         <!-- </div> -->
     </div>
-    <div id="about" class="img-parallax" data-url="../imgs/roses.jpg" data-height="100vh">
+    <div id="portfolio" class="img-parallax" data-url="../imgs/roses.jpg" data-height="100vh">
         <div class="spanner">
             <div class="container">
                 <section>
@@ -138,25 +141,27 @@
             </div>
         </div>
     </div>
-    <div id="contact" class="img-parallax" data-url="../imgs/abstract.jpg" data-height="100vh">
+    <div id="contact-me" class="img-parallax" data-url="../imgs/abstract.jpg" data-height="100vh">
 
         <div class="container">
             <section>
+                   
                 <div class="widget-contact">
+                    <img class="profile-pic small impact-border" src="imgs/me.jpg" />
                     <h1>Contact Me</h1>
-                <form action="https://formspree.io/vtsells@gmail.com" method="POST">
-                    <label for="name">Your Name:</label>
-                    <input type="text" name="name" id="name">
-                    
-                    <label for="reply-to">Your Email:</label>
-                    <input type="email" name="_replyto" id="reply-to">
-                    
-                    <label for="body">Your Message:</label>
-                    <textarea name="body" rows="8" id="body"></textarea>
-                    
-                    <input type="submit" value="Send">
-                    <input type="text" name="_gotcha" style="display:none" />
-                </form>
+                    <form action="https://formspree.io/vtsells@gmail.com" method="POST">
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="reply-to">Your Email:</label>
+                        <input type="email" name="_replyto" id="reply-to">
+
+                        <label for="body">Your Message:</label>
+                        <textarea name="body" rows="8" id="body"></textarea>
+
+                        <input type="submit" value="Send">
+                        <input type="text" name="_gotcha" style="display:none" />
+                    </form>
                 </div>
             </section>
         </div>

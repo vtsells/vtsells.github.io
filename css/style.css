@@ -55,6 +55,9 @@ a {
   .container {
     width: 100%;
   }
+  .lg-only {
+    display: none;
+  }
 }
 header {
   display: flex;
@@ -184,7 +187,7 @@ header.fixed #img-me {
   header.expanded nav ul li {
     display: flex;
     align-items: stretch;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
   }
   header.expanded nav ul li a {
@@ -193,7 +196,17 @@ header.fixed #img-me {
     width: 100%;
   }
   header.expanded nav ul li a:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
+  }
+  header.expanded nav ul:before {
+    content: "";
+    height: 120vh;
+    width: 100vw;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(82, 98, 122, 0.725);
   }
   header.expanded .underline {
     display: none;
@@ -224,8 +237,14 @@ section {
   background-attachment: fixed;
   background-position: center;
 }
+.profile-pic {
+  margin: 10px;
+}
 .profile-pic.round {
   border-radius: 500px;
+}
+.profile-pic.small {
+  width: 100px;
 }
 img.responsive {
   min-width: 200px;
@@ -234,11 +253,7 @@ img.responsive {
 }
 #img-me {
   position: absolute;
-  border: 20px solid rgba(0, 0, 0, 0.2);
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
   width: 330px;
-  box-shadow: 0 0 50px #000000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -248,6 +263,17 @@ img.responsive {
 #img-me:hover {
   filter: grayscale(0);
   width: 310px;
+}
+.impact-border {
+  box-shadow: 0 0 50px #000000;
+  border: 20px solid rgba(0, 0, 0, 0.2);
+  border-radius: 500px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.impact-border.small {
+  border-width: 5px;
+  box-shadow: 0 0 10px #000000;
 }
 .img-filler {
   background: rgba(82, 98, 122, 0.425);
@@ -432,9 +458,31 @@ ul.list {
   font-weight: 100;
 }
 .widget-contact {
+  position: relative;
+  z-index: 1;
   color: #ffffff;
-  background: linear-gradient(to bottom right, rgba(0, 143, 199, 0.4), rgba(0, 0, 0, 0)), linear-gradient(to bottom left, rgba(0, 199, 56, 0.4), rgba(0, 0, 0, 0)), linear-gradient(to top right, rgba(56, 0, 199, 0.4), rgba(0, 0, 0, 0));
+  overflow: hidden;
   padding: 10px;
+}
+.widget-contact img {
+  vertical-align: middle;
+}
+.widget-contact h1 {
+  display: inline;
+}
+.widget-contact:before {
+  content: "";
+  width: 350%;
+  height: 350%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  background: linear-gradient(to bottom right, rgba(0, 143, 199, 0.4), rgba(0, 0, 0, 0)), linear-gradient(to bottom left, rgba(0, 199, 56, 0.4), rgba(0, 0, 0, 0)), linear-gradient(to top right, rgba(56, 0, 199, 0.4), rgba(0, 0, 0, 0));
+  transform: translate(-50%, -50%);
+  transform-origin: top left;
+  transition: all 12s linear;
+  animation: widget-contact-background 12s infinite linear;
 }
 .widget-contact * {
   box-sizing: content-box;
@@ -447,7 +495,12 @@ ul.list {
 .widget-contact label {
   width: 30%;
   text-align: right;
+  position: relative;
+  box-sizing: content-box;
   margin-left: -20px;
+}
+.widget-contact label:hover {
+  cursor: pointer;
 }
 .widget-contact input,
 .widget-contact textarea {
@@ -486,20 +539,33 @@ ul.list {
   padding-bottom: 5px;
 }
 .widget-contact input[type="submit"]:hover {
+  cursor: pointer;
   background: rgba(0, 161, 225, 0.5);
+}
+@keyframes widget-contact-background {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: top left;
+  }
+  50% {
+    transform: rotate(360deg) translate(-50%, -50%);
+    transform-origin: top left;
+  }
+  100% {
+    transform: rotate(719deg) translate(-50%, -50%);
+    transform-origin: top left;
+  }
 }
 @media only screen and (max-width: 630px) {
   .widget-contact label {
-    width: 100%;
+    width: 100% !important;
     text-align: left;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 2px 0;
   }
   .widget-contact input,
   .widget-contact textarea {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 100% !important;
+    margin: 2px 0;
   }
 }
 /*# sourceMappingURL=./style.css.map */

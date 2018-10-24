@@ -11,8 +11,12 @@
  //   padding:@var-nav-height 0;
 }
 .profile-pic{
+    margin:10px;
     &.round{
         border-radius:500px;
+    }
+    &.small{
+        width:100px;
     }
 }
 img.responsive{
@@ -22,11 +26,9 @@ img.responsive{
 }
 #img-me{
     position: absolute;
-    border:20px solid rgba(0,0,0,.2);
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
+
     width:330px;
-    box-shadow: 0 0 50px rgba(0,0,0,1);
+
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -35,6 +37,17 @@ img.responsive{
     &:hover{
         filter:grayscale(0);
         width:310px;
+    }
+}
+.impact-border{
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+    border:20px solid rgba(0,0,0,.2);
+    border-radius: 500px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    &.small{
+        border-width: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,1);
     }
 }
 .img-filler{
