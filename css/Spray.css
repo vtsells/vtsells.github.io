@@ -1,772 +1,1028 @@
 /*   Selectors that apply appropriate styles for each color.
      Any themed hoverable will be highlighted based off their design color.  */
 .pri {
-  background: #a6af29;
-  color: #f6f8df;
+  background: #71c4e6;
+  color: #ffffff;
 }
 .pri.text {
   background: unset;
-  color: #a6af29;
+  color: #71c4e6;
 }
 .pri.hover:hover {
-  background: #cdd64f;
-  color: #af2963;
+  background: #b2dff1;
+  color: #000000;
+}
+.pri:focus {
+  background: #b2dff1;
+  color: #000000;
 }
 .pri.bordered {
-  border: 5px solid #6b711a;
+  border: 5px solid #30a9db;
 }
 .pri.trans-light {
-  background: rgba(166, 175, 41, 0.9);
+  background: rgba(113, 196, 230, 0.9);
 }
 .pri.trans-light.text {
   background: unset;
-  color: rgba(166, 175, 41, 0.9);
+  color: rgba(113, 196, 230, 0.9);
 }
 .pri.trans-light.hover:hover {
-  background: rgba(205, 214, 79, 0.9);
-  color: #af2963;
+  background: rgba(178, 223, 241, 0.9);
+  color: #000000;
+}
+.pri.trans-light:focus {
+  background: rgba(178, 223, 241, 0.9);
+  color: #000000;
 }
 .pri.trans {
-  background: rgba(166, 175, 41, 0.6);
+  background: rgba(113, 196, 230, 0.6);
 }
 .pri.trans.text {
   background: unset;
-  color: rgba(166, 175, 41, 0.6);
+  color: rgba(113, 196, 230, 0.6);
 }
 .pri.trans.hover:hover {
-  background: rgba(205, 214, 79, 0.6);
-  color: #af2963;
+  background: rgba(178, 223, 241, 0.6);
+  color: #000000;
+}
+.pri.trans:focus {
+  background: rgba(178, 223, 241, 0.6);
+  color: #000000;
 }
 .pri.trans-heavy {
-  background: rgba(166, 175, 41, 0.3);
+  background: rgba(113, 196, 230, 0.3);
 }
 .pri.trans-heavy.text {
   background: unset;
-  color: rgba(166, 175, 41, 0.3);
+  color: rgba(113, 196, 230, 0.3);
 }
 .pri.trans-heavy.hover:hover {
-  background: rgba(205, 214, 79, 0.3);
-  color: #af2963;
+  background: rgba(178, 223, 241, 0.3);
+  color: #000000;
+}
+.pri.trans-heavy:focus {
+  background: rgba(178, 223, 241, 0.3);
+  color: #000000;
 }
 .c1p {
-  background: #af7529;
-  color: #f6f8df;
+  background: #71e6ce;
+  color: #ffffff;
 }
 .c1p.text {
   background: unset;
-  color: #af7529;
+  color: #71e6ce;
 }
 .c1p.hover:hover {
-  background: #d69b4f;
-  color: #f6f8df;
+  background: #b2f1e4;
+  color: #000000;
+}
+.c1p:focus {
+  background: #b2f1e4;
+  color: #000000;
 }
 .c1p.bordered {
-  border: 5px solid #714c1a;
+  border: 5px solid #30dbb7;
 }
 .c1p.trans-light {
-  background: rgba(175, 117, 41, 0.9);
+  background: rgba(113, 230, 206, 0.9);
 }
 .c1p.trans-light.text {
   background: unset;
-  color: rgba(175, 117, 41, 0.9);
+  color: rgba(113, 230, 206, 0.9);
 }
 .c1p.trans-light.hover:hover {
-  background: rgba(214, 155, 79, 0.9);
-  color: #f6f8df;
+  background: rgba(178, 241, 228, 0.9);
+  color: #000000;
+}
+.c1p.trans-light:focus {
+  background: rgba(178, 241, 228, 0.9);
+  color: #000000;
 }
 .c1p.trans {
-  background: rgba(175, 117, 41, 0.6);
+  background: rgba(113, 230, 206, 0.6);
 }
 .c1p.trans.text {
   background: unset;
-  color: rgba(175, 117, 41, 0.6);
+  color: rgba(113, 230, 206, 0.6);
 }
 .c1p.trans.hover:hover {
-  background: rgba(214, 155, 79, 0.6);
-  color: #f6f8df;
+  background: rgba(178, 241, 228, 0.6);
+  color: #000000;
+}
+.c1p.trans:focus {
+  background: rgba(178, 241, 228, 0.6);
+  color: #000000;
 }
 .c1p.trans-heavy {
-  background: rgba(175, 117, 41, 0.3);
+  background: rgba(113, 230, 206, 0.3);
 }
 .c1p.trans-heavy.text {
   background: unset;
-  color: rgba(175, 117, 41, 0.3);
+  color: rgba(113, 230, 206, 0.3);
 }
 .c1p.trans-heavy.hover:hover {
-  background: rgba(214, 155, 79, 0.3);
-  color: #f6f8df;
+  background: rgba(178, 241, 228, 0.3);
+  color: #000000;
+}
+.c1p.trans-heavy:focus {
+  background: rgba(178, 241, 228, 0.3);
+  color: #000000;
 }
 .c2p {
-  background: #63af29;
-  color: #f6f8df;
+  background: #718ae6;
+  color: #ffffff;
 }
 .c2p.text {
   background: unset;
-  color: #63af29;
+  color: #718ae6;
 }
 .c2p.hover:hover {
-  background: #89d64f;
-  color: #af2963;
+  background: #b2bff1;
+  color: #ffffff;
+}
+.c2p:focus {
+  background: #b2bff1;
+  color: #ffffff;
 }
 .c2p.bordered {
-  border: 5px solid #40711a;
+  border: 5px solid #3054db;
 }
 .c2p.trans-light {
-  background: rgba(99, 175, 41, 0.9);
+  background: rgba(113, 138, 230, 0.9);
 }
 .c2p.trans-light.text {
   background: unset;
-  color: rgba(99, 175, 41, 0.9);
+  color: rgba(113, 138, 230, 0.9);
 }
 .c2p.trans-light.hover:hover {
-  background: rgba(137, 214, 79, 0.9);
-  color: #af2963;
+  background: rgba(178, 191, 241, 0.9);
+  color: #ffffff;
+}
+.c2p.trans-light:focus {
+  background: rgba(178, 191, 241, 0.9);
+  color: #ffffff;
 }
 .c2p.trans {
-  background: rgba(99, 175, 41, 0.6);
+  background: rgba(113, 138, 230, 0.6);
 }
 .c2p.trans.text {
   background: unset;
-  color: rgba(99, 175, 41, 0.6);
+  color: rgba(113, 138, 230, 0.6);
 }
 .c2p.trans.hover:hover {
-  background: rgba(137, 214, 79, 0.6);
-  color: #af2963;
+  background: rgba(178, 191, 241, 0.6);
+  color: #ffffff;
+}
+.c2p.trans:focus {
+  background: rgba(178, 191, 241, 0.6);
+  color: #ffffff;
 }
 .c2p.trans-heavy {
-  background: rgba(99, 175, 41, 0.3);
+  background: rgba(113, 138, 230, 0.3);
 }
 .c2p.trans-heavy.text {
   background: unset;
-  color: rgba(99, 175, 41, 0.3);
+  color: rgba(113, 138, 230, 0.3);
 }
 .c2p.trans-heavy.hover:hover {
-  background: rgba(137, 214, 79, 0.3);
-  color: #af2963;
+  background: rgba(178, 191, 241, 0.3);
+  color: #ffffff;
+}
+.c2p.trans-heavy:focus {
+  background: rgba(178, 191, 241, 0.3);
+  color: #ffffff;
 }
 .c3p {
-  background: #29af32;
-  color: #f6f8df;
+  background: #9371e6;
+  color: #ffffff;
 }
 .c3p.text {
   background: unset;
-  color: #29af32;
+  color: #9371e6;
 }
 .c3p.hover:hover {
-  background: #4fd658;
-  color: #af2963;
+  background: #c4b2f1;
+  color: #ffffff;
+}
+.c3p:focus {
+  background: #c4b2f1;
+  color: #ffffff;
 }
 .c3p.bordered {
-  border: 5px solid #1a7120;
+  border: 5px solid #6230db;
 }
 .c3p.trans-light {
-  background: rgba(41, 175, 50, 0.9);
+  background: rgba(147, 113, 230, 0.9);
 }
 .c3p.trans-light.text {
   background: unset;
-  color: rgba(41, 175, 50, 0.9);
+  color: rgba(147, 113, 230, 0.9);
 }
 .c3p.trans-light.hover:hover {
-  background: rgba(79, 214, 88, 0.9);
-  color: #af2963;
+  background: rgba(196, 178, 241, 0.9);
+  color: #ffffff;
+}
+.c3p.trans-light:focus {
+  background: rgba(196, 178, 241, 0.9);
+  color: #ffffff;
 }
 .c3p.trans {
-  background: rgba(41, 175, 50, 0.6);
+  background: rgba(147, 113, 230, 0.6);
 }
 .c3p.trans.text {
   background: unset;
-  color: rgba(41, 175, 50, 0.6);
+  color: rgba(147, 113, 230, 0.6);
 }
 .c3p.trans.hover:hover {
-  background: rgba(79, 214, 88, 0.6);
-  color: #af2963;
+  background: rgba(196, 178, 241, 0.6);
+  color: #ffffff;
+}
+.c3p.trans:focus {
+  background: rgba(196, 178, 241, 0.6);
+  color: #ffffff;
 }
 .c3p.trans-heavy {
-  background: rgba(41, 175, 50, 0.3);
+  background: rgba(147, 113, 230, 0.3);
 }
 .c3p.trans-heavy.text {
   background: unset;
-  color: rgba(41, 175, 50, 0.3);
+  color: rgba(147, 113, 230, 0.3);
 }
 .c3p.trans-heavy.hover:hover {
-  background: rgba(79, 214, 88, 0.3);
-  color: #af2963;
+  background: rgba(196, 178, 241, 0.3);
+  color: #ffffff;
+}
+.c3p.trans-heavy:focus {
+  background: rgba(196, 178, 241, 0.3);
+  color: #ffffff;
 }
 .sec {
-  background: #29af75;
-  color: #f6f8df;
+  background: #718ae6;
+  color: #ffffff;
 }
 .sec.text {
   background: unset;
-  color: #29af75;
+  color: #718ae6;
 }
 .sec.hover:hover {
-  background: #4fd69b;
-  color: #af2963;
+  background: #b2bff1;
+  color: #ffffff;
+}
+.sec:focus {
+  background: #b2bff1;
+  color: #ffffff;
 }
 .sec.bordered {
-  border: 5px solid #1a714c;
+  border: 5px solid #3054db;
 }
 .sec.trans-light {
-  background: rgba(41, 175, 117, 0.9);
+  background: rgba(113, 138, 230, 0.9);
 }
 .sec.trans-light.text {
   background: unset;
-  color: rgba(41, 175, 117, 0.9);
+  color: rgba(113, 138, 230, 0.9);
 }
 .sec.trans-light.hover:hover {
-  background: rgba(79, 214, 155, 0.9);
-  color: #af2963;
+  background: rgba(178, 191, 241, 0.9);
+  color: #ffffff;
+}
+.sec.trans-light:focus {
+  background: rgba(178, 191, 241, 0.9);
+  color: #ffffff;
 }
 .sec.trans {
-  background: rgba(41, 175, 117, 0.6);
+  background: rgba(113, 138, 230, 0.6);
 }
 .sec.trans.text {
   background: unset;
-  color: rgba(41, 175, 117, 0.6);
+  color: rgba(113, 138, 230, 0.6);
 }
 .sec.trans.hover:hover {
-  background: rgba(79, 214, 155, 0.6);
-  color: #af2963;
+  background: rgba(178, 191, 241, 0.6);
+  color: #ffffff;
+}
+.sec.trans:focus {
+  background: rgba(178, 191, 241, 0.6);
+  color: #ffffff;
 }
 .sec.trans-heavy {
-  background: rgba(41, 175, 117, 0.3);
+  background: rgba(113, 138, 230, 0.3);
 }
 .sec.trans-heavy.text {
   background: unset;
-  color: rgba(41, 175, 117, 0.3);
+  color: rgba(113, 138, 230, 0.3);
 }
 .sec.trans-heavy.hover:hover {
-  background: rgba(79, 214, 155, 0.3);
-  color: #af2963;
+  background: rgba(178, 191, 241, 0.3);
+  color: #ffffff;
+}
+.sec.trans-heavy:focus {
+  background: rgba(178, 191, 241, 0.3);
+  color: #ffffff;
 }
 .c1s {
-  background: #29af32;
-  color: #f6f8df;
+  background: #71c4e6;
+  color: #ffffff;
 }
 .c1s.text {
   background: unset;
-  color: #29af32;
+  color: #71c4e6;
 }
 .c1s.hover:hover {
-  background: #4fd658;
-  color: #af2963;
+  background: #b2dff1;
+  color: #000000;
+}
+.c1s:focus {
+  background: #b2dff1;
+  color: #000000;
 }
 .c1s.bordered {
-  border: 5px solid #1a7120;
+  border: 5px solid #30a9db;
 }
 .c1s.trans-light {
-  background: rgba(41, 175, 50, 0.9);
+  background: rgba(113, 196, 230, 0.9);
 }
 .c1s.trans-light.text {
   background: unset;
-  color: rgba(41, 175, 50, 0.9);
+  color: rgba(113, 196, 230, 0.9);
 }
 .c1s.trans-light.hover:hover {
-  background: rgba(79, 214, 88, 0.9);
-  color: #af2963;
+  background: rgba(178, 223, 241, 0.9);
+  color: #000000;
+}
+.c1s.trans-light:focus {
+  background: rgba(178, 223, 241, 0.9);
+  color: #000000;
 }
 .c1s.trans {
-  background: rgba(41, 175, 50, 0.6);
+  background: rgba(113, 196, 230, 0.6);
 }
 .c1s.trans.text {
   background: unset;
-  color: rgba(41, 175, 50, 0.6);
+  color: rgba(113, 196, 230, 0.6);
 }
 .c1s.trans.hover:hover {
-  background: rgba(79, 214, 88, 0.6);
-  color: #af2963;
+  background: rgba(178, 223, 241, 0.6);
+  color: #000000;
+}
+.c1s.trans:focus {
+  background: rgba(178, 223, 241, 0.6);
+  color: #000000;
 }
 .c1s.trans-heavy {
-  background: rgba(41, 175, 50, 0.3);
+  background: rgba(113, 196, 230, 0.3);
 }
 .c1s.trans-heavy.text {
   background: unset;
-  color: rgba(41, 175, 50, 0.3);
+  color: rgba(113, 196, 230, 0.3);
 }
 .c1s.trans-heavy.hover:hover {
-  background: rgba(79, 214, 88, 0.3);
-  color: #af2963;
+  background: rgba(178, 223, 241, 0.3);
+  color: #000000;
+}
+.c1s.trans-heavy:focus {
+  background: rgba(178, 223, 241, 0.3);
+  color: #000000;
 }
 .c2s {
-  background: #29a6af;
-  color: #f6f8df;
+  background: #9371e6;
+  color: #ffffff;
 }
 .c2s.text {
   background: unset;
-  color: #29a6af;
+  color: #9371e6;
 }
 .c2s.hover:hover {
-  background: #4fcdd6;
-  color: #f6f8df;
+  background: #c4b2f1;
+  color: #ffffff;
+}
+.c2s:focus {
+  background: #c4b2f1;
+  color: #ffffff;
 }
 .c2s.bordered {
-  border: 5px solid #1a6b71;
+  border: 5px solid #6230db;
 }
 .c2s.trans-light {
-  background: rgba(41, 166, 175, 0.9);
+  background: rgba(147, 113, 230, 0.9);
 }
 .c2s.trans-light.text {
   background: unset;
-  color: rgba(41, 166, 175, 0.9);
+  color: rgba(147, 113, 230, 0.9);
 }
 .c2s.trans-light.hover:hover {
-  background: rgba(79, 205, 214, 0.9);
-  color: #f6f8df;
+  background: rgba(196, 178, 241, 0.9);
+  color: #ffffff;
+}
+.c2s.trans-light:focus {
+  background: rgba(196, 178, 241, 0.9);
+  color: #ffffff;
 }
 .c2s.trans {
-  background: rgba(41, 166, 175, 0.6);
+  background: rgba(147, 113, 230, 0.6);
 }
 .c2s.trans.text {
   background: unset;
-  color: rgba(41, 166, 175, 0.6);
+  color: rgba(147, 113, 230, 0.6);
 }
 .c2s.trans.hover:hover {
-  background: rgba(79, 205, 214, 0.6);
-  color: #f6f8df;
+  background: rgba(196, 178, 241, 0.6);
+  color: #ffffff;
+}
+.c2s.trans:focus {
+  background: rgba(196, 178, 241, 0.6);
+  color: #ffffff;
 }
 .c2s.trans-heavy {
-  background: rgba(41, 166, 175, 0.3);
+  background: rgba(147, 113, 230, 0.3);
 }
 .c2s.trans-heavy.text {
   background: unset;
-  color: rgba(41, 166, 175, 0.3);
+  color: rgba(147, 113, 230, 0.3);
 }
 .c2s.trans-heavy.hover:hover {
-  background: rgba(79, 205, 214, 0.3);
-  color: #f6f8df;
+  background: rgba(196, 178, 241, 0.3);
+  color: #ffffff;
+}
+.c2s.trans-heavy:focus {
+  background: rgba(196, 178, 241, 0.3);
+  color: #ffffff;
 }
 .c3s {
-  background: #2963af;
-  color: #f6f8df;
+  background: #ce71e6;
+  color: #ffffff;
 }
 .c3s.text {
   background: unset;
-  color: #2963af;
+  color: #ce71e6;
 }
 .c3s.hover:hover {
-  background: #4f89d6;
-  color: #f6f8df;
+  background: #e4b2f1;
+  color: #ffffff;
+}
+.c3s:focus {
+  background: #e4b2f1;
+  color: #ffffff;
 }
 .c3s.bordered {
-  border: 5px solid #1a4071;
+  border: 5px solid #b730db;
 }
 .c3s.trans-light {
-  background: rgba(41, 99, 175, 0.9);
+  background: rgba(206, 113, 230, 0.9);
 }
 .c3s.trans-light.text {
   background: unset;
-  color: rgba(41, 99, 175, 0.9);
+  color: rgba(206, 113, 230, 0.9);
 }
 .c3s.trans-light.hover:hover {
-  background: rgba(79, 137, 214, 0.9);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.9);
+  color: #ffffff;
+}
+.c3s.trans-light:focus {
+  background: rgba(228, 178, 241, 0.9);
+  color: #ffffff;
 }
 .c3s.trans {
-  background: rgba(41, 99, 175, 0.6);
+  background: rgba(206, 113, 230, 0.6);
 }
 .c3s.trans.text {
   background: unset;
-  color: rgba(41, 99, 175, 0.6);
+  color: rgba(206, 113, 230, 0.6);
 }
 .c3s.trans.hover:hover {
-  background: rgba(79, 137, 214, 0.6);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.6);
+  color: #ffffff;
+}
+.c3s.trans:focus {
+  background: rgba(228, 178, 241, 0.6);
+  color: #ffffff;
 }
 .c3s.trans-heavy {
-  background: rgba(41, 99, 175, 0.3);
+  background: rgba(206, 113, 230, 0.3);
 }
 .c3s.trans-heavy.text {
   background: unset;
-  color: rgba(41, 99, 175, 0.3);
+  color: rgba(206, 113, 230, 0.3);
 }
 .c3s.trans-heavy.hover:hover {
-  background: rgba(79, 137, 214, 0.3);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.3);
+  color: #ffffff;
+}
+.c3s.trans-heavy:focus {
+  background: rgba(228, 178, 241, 0.3);
+  color: #ffffff;
 }
 .ter {
-  background: #3229af;
-  color: #f6f8df;
+  background: #ce71e6;
+  color: #ffffff;
 }
 .ter.text {
   background: unset;
-  color: #3229af;
+  color: #ce71e6;
 }
 .ter.hover:hover {
-  background: #584fd6;
-  color: #f6f8df;
+  background: #e4b2f1;
+  color: #ffffff;
+}
+.ter:focus {
+  background: #e4b2f1;
+  color: #ffffff;
 }
 .ter.bordered {
-  border: 5px solid #201a71;
+  border: 5px solid #b730db;
 }
 .ter.trans-light {
-  background: rgba(50, 41, 175, 0.9);
+  background: rgba(206, 113, 230, 0.9);
 }
 .ter.trans-light.text {
   background: unset;
-  color: rgba(50, 41, 175, 0.9);
+  color: rgba(206, 113, 230, 0.9);
 }
 .ter.trans-light.hover:hover {
-  background: rgba(88, 79, 214, 0.9);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.9);
+  color: #ffffff;
+}
+.ter.trans-light:focus {
+  background: rgba(228, 178, 241, 0.9);
+  color: #ffffff;
 }
 .ter.trans {
-  background: rgba(50, 41, 175, 0.6);
+  background: rgba(206, 113, 230, 0.6);
 }
 .ter.trans.text {
   background: unset;
-  color: rgba(50, 41, 175, 0.6);
+  color: rgba(206, 113, 230, 0.6);
 }
 .ter.trans.hover:hover {
-  background: rgba(88, 79, 214, 0.6);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.6);
+  color: #ffffff;
+}
+.ter.trans:focus {
+  background: rgba(228, 178, 241, 0.6);
+  color: #ffffff;
 }
 .ter.trans-heavy {
-  background: rgba(50, 41, 175, 0.3);
+  background: rgba(206, 113, 230, 0.3);
 }
 .ter.trans-heavy.text {
   background: unset;
-  color: rgba(50, 41, 175, 0.3);
+  color: rgba(206, 113, 230, 0.3);
 }
 .ter.trans-heavy.hover:hover {
-  background: rgba(88, 79, 214, 0.3);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.3);
+  color: #ffffff;
+}
+.ter.trans-heavy:focus {
+  background: rgba(228, 178, 241, 0.3);
+  color: #ffffff;
 }
 .c1t {
-  background: #2963af;
-  color: #f6f8df;
+  background: #9371e6;
+  color: #ffffff;
 }
 .c1t.text {
   background: unset;
-  color: #2963af;
+  color: #9371e6;
 }
 .c1t.hover:hover {
-  background: #4f89d6;
-  color: #f6f8df;
+  background: #c4b2f1;
+  color: #ffffff;
+}
+.c1t:focus {
+  background: #c4b2f1;
+  color: #ffffff;
 }
 .c1t.bordered {
-  border: 5px solid #1a4071;
+  border: 5px solid #6230db;
 }
 .c1t.trans-light {
-  background: rgba(41, 99, 175, 0.9);
+  background: rgba(147, 113, 230, 0.9);
 }
 .c1t.trans-light.text {
   background: unset;
-  color: rgba(41, 99, 175, 0.9);
+  color: rgba(147, 113, 230, 0.9);
 }
 .c1t.trans-light.hover:hover {
-  background: rgba(79, 137, 214, 0.9);
-  color: #f6f8df;
+  background: rgba(196, 178, 241, 0.9);
+  color: #ffffff;
+}
+.c1t.trans-light:focus {
+  background: rgba(196, 178, 241, 0.9);
+  color: #ffffff;
 }
 .c1t.trans {
-  background: rgba(41, 99, 175, 0.6);
+  background: rgba(147, 113, 230, 0.6);
 }
 .c1t.trans.text {
   background: unset;
-  color: rgba(41, 99, 175, 0.6);
+  color: rgba(147, 113, 230, 0.6);
 }
 .c1t.trans.hover:hover {
-  background: rgba(79, 137, 214, 0.6);
-  color: #f6f8df;
+  background: rgba(196, 178, 241, 0.6);
+  color: #ffffff;
+}
+.c1t.trans:focus {
+  background: rgba(196, 178, 241, 0.6);
+  color: #ffffff;
 }
 .c1t.trans-heavy {
-  background: rgba(41, 99, 175, 0.3);
+  background: rgba(147, 113, 230, 0.3);
 }
 .c1t.trans-heavy.text {
   background: unset;
-  color: rgba(41, 99, 175, 0.3);
+  color: rgba(147, 113, 230, 0.3);
 }
 .c1t.trans-heavy.hover:hover {
-  background: rgba(79, 137, 214, 0.3);
-  color: #f6f8df;
+  background: rgba(196, 178, 241, 0.3);
+  color: #ffffff;
+}
+.c1t.trans-heavy:focus {
+  background: rgba(196, 178, 241, 0.3);
+  color: #ffffff;
 }
 .c2t {
-  background: #7529af;
-  color: #f6f8df;
+  background: #e671c4;
+  color: #ffffff;
 }
 .c2t.text {
   background: unset;
-  color: #7529af;
+  color: #e671c4;
 }
 .c2t.hover:hover {
-  background: #9b4fd6;
-  color: #f6f8df;
+  background: #f1b2df;
+  color: #ffffff;
+}
+.c2t:focus {
+  background: #f1b2df;
+  color: #ffffff;
 }
 .c2t.bordered {
-  border: 5px solid #4c1a71;
+  border: 5px solid #db30a9;
 }
 .c2t.trans-light {
-  background: rgba(117, 41, 175, 0.9);
+  background: rgba(230, 113, 196, 0.9);
 }
 .c2t.trans-light.text {
   background: unset;
-  color: rgba(117, 41, 175, 0.9);
+  color: rgba(230, 113, 196, 0.9);
 }
 .c2t.trans-light.hover:hover {
-  background: rgba(155, 79, 214, 0.9);
-  color: #f6f8df;
+  background: rgba(241, 178, 223, 0.9);
+  color: #ffffff;
+}
+.c2t.trans-light:focus {
+  background: rgba(241, 178, 223, 0.9);
+  color: #ffffff;
 }
 .c2t.trans {
-  background: rgba(117, 41, 175, 0.6);
+  background: rgba(230, 113, 196, 0.6);
 }
 .c2t.trans.text {
   background: unset;
-  color: rgba(117, 41, 175, 0.6);
+  color: rgba(230, 113, 196, 0.6);
 }
 .c2t.trans.hover:hover {
-  background: rgba(155, 79, 214, 0.6);
-  color: #f6f8df;
+  background: rgba(241, 178, 223, 0.6);
+  color: #ffffff;
+}
+.c2t.trans:focus {
+  background: rgba(241, 178, 223, 0.6);
+  color: #ffffff;
 }
 .c2t.trans-heavy {
-  background: rgba(117, 41, 175, 0.3);
+  background: rgba(230, 113, 196, 0.3);
 }
 .c2t.trans-heavy.text {
   background: unset;
-  color: rgba(117, 41, 175, 0.3);
+  color: rgba(230, 113, 196, 0.3);
 }
 .c2t.trans-heavy.hover:hover {
-  background: rgba(155, 79, 214, 0.3);
-  color: #f6f8df;
+  background: rgba(241, 178, 223, 0.3);
+  color: #ffffff;
+}
+.c2t.trans-heavy:focus {
+  background: rgba(241, 178, 223, 0.3);
+  color: #ffffff;
 }
 .c3t {
-  background: #af29a6;
-  color: #f6f8df;
+  background: #e67189;
+  color: #ffffff;
 }
 .c3t.text {
   background: unset;
-  color: #af29a6;
+  color: #e67189;
 }
 .c3t.hover:hover {
-  background: #d64fcd;
-  color: #f6f8df;
+  background: #f1b2bf;
+  color: #ffffff;
+}
+.c3t:focus {
+  background: #f1b2bf;
+  color: #ffffff;
 }
 .c3t.bordered {
-  border: 5px solid #711a6b;
+  border: 5px solid #db3054;
 }
 .c3t.trans-light {
-  background: rgba(175, 41, 166, 0.9);
+  background: rgba(230, 113, 137, 0.9);
 }
 .c3t.trans-light.text {
   background: unset;
-  color: rgba(175, 41, 166, 0.9);
+  color: rgba(230, 113, 137, 0.9);
 }
 .c3t.trans-light.hover:hover {
-  background: rgba(214, 79, 205, 0.9);
-  color: #f6f8df;
+  background: rgba(241, 178, 191, 0.9);
+  color: #ffffff;
+}
+.c3t.trans-light:focus {
+  background: rgba(241, 178, 191, 0.9);
+  color: #ffffff;
 }
 .c3t.trans {
-  background: rgba(175, 41, 166, 0.6);
+  background: rgba(230, 113, 137, 0.6);
 }
 .c3t.trans.text {
   background: unset;
-  color: rgba(175, 41, 166, 0.6);
+  color: rgba(230, 113, 137, 0.6);
 }
 .c3t.trans.hover:hover {
-  background: rgba(214, 79, 205, 0.6);
-  color: #f6f8df;
+  background: rgba(241, 178, 191, 0.6);
+  color: #ffffff;
+}
+.c3t.trans:focus {
+  background: rgba(241, 178, 191, 0.6);
+  color: #ffffff;
 }
 .c3t.trans-heavy {
-  background: rgba(175, 41, 166, 0.3);
+  background: rgba(230, 113, 137, 0.3);
 }
 .c3t.trans-heavy.text {
   background: unset;
-  color: rgba(175, 41, 166, 0.3);
+  color: rgba(230, 113, 137, 0.3);
 }
 .c3t.trans-heavy.hover:hover {
-  background: rgba(214, 79, 205, 0.3);
-  color: #f6f8df;
+  background: rgba(241, 178, 191, 0.3);
+  color: #ffffff;
+}
+.c3t.trans-heavy:focus {
+  background: rgba(241, 178, 191, 0.3);
+  color: #ffffff;
 }
 .qua {
-  background: #af2963;
-  color: #f6f8df;
+  background: #e671c4;
+  color: #ffffff;
 }
 .qua.text {
   background: unset;
-  color: #af2963;
+  color: #e671c4;
 }
 .qua.hover:hover {
-  background: #d64f89;
-  color: #f6f8df;
+  background: #f1b2df;
+  color: #ffffff;
+}
+.qua:focus {
+  background: #f1b2df;
+  color: #ffffff;
 }
 .qua.bordered {
-  border: 5px solid #711a40;
+  border: 5px solid #db30a9;
 }
 .qua.trans-light {
-  background: rgba(175, 41, 99, 0.9);
+  background: rgba(230, 113, 196, 0.9);
 }
 .qua.trans-light.text {
   background: unset;
-  color: rgba(175, 41, 99, 0.9);
+  color: rgba(230, 113, 196, 0.9);
 }
 .qua.trans-light.hover:hover {
-  background: rgba(214, 79, 137, 0.9);
-  color: #f6f8df;
+  background: rgba(241, 178, 223, 0.9);
+  color: #ffffff;
+}
+.qua.trans-light:focus {
+  background: rgba(241, 178, 223, 0.9);
+  color: #ffffff;
 }
 .qua.trans {
-  background: rgba(175, 41, 99, 0.6);
+  background: rgba(230, 113, 196, 0.6);
 }
 .qua.trans.text {
   background: unset;
-  color: rgba(175, 41, 99, 0.6);
+  color: rgba(230, 113, 196, 0.6);
 }
 .qua.trans.hover:hover {
-  background: rgba(214, 79, 137, 0.6);
-  color: #f6f8df;
+  background: rgba(241, 178, 223, 0.6);
+  color: #ffffff;
+}
+.qua.trans:focus {
+  background: rgba(241, 178, 223, 0.6);
+  color: #ffffff;
 }
 .qua.trans-heavy {
-  background: rgba(175, 41, 99, 0.3);
+  background: rgba(230, 113, 196, 0.3);
 }
 .qua.trans-heavy.text {
   background: unset;
-  color: rgba(175, 41, 99, 0.3);
+  color: rgba(230, 113, 196, 0.3);
 }
 .qua.trans-heavy.hover:hover {
-  background: rgba(214, 79, 137, 0.3);
-  color: #f6f8df;
+  background: rgba(241, 178, 223, 0.3);
+  color: #ffffff;
+}
+.qua.trans-heavy:focus {
+  background: rgba(241, 178, 223, 0.3);
+  color: #ffffff;
 }
 .c1q {
-  background: #af29a6;
-  color: #f6f8df;
+  background: #ce71e6;
+  color: #ffffff;
 }
 .c1q.text {
   background: unset;
-  color: #af29a6;
+  color: #ce71e6;
 }
 .c1q.hover:hover {
-  background: #d64fcd;
-  color: #f6f8df;
+  background: #e4b2f1;
+  color: #ffffff;
+}
+.c1q:focus {
+  background: #e4b2f1;
+  color: #ffffff;
 }
 .c1q.bordered {
-  border: 5px solid #711a6b;
+  border: 5px solid #b730db;
 }
 .c1q.trans-light {
-  background: rgba(175, 41, 166, 0.9);
+  background: rgba(206, 113, 230, 0.9);
 }
 .c1q.trans-light.text {
   background: unset;
-  color: rgba(175, 41, 166, 0.9);
+  color: rgba(206, 113, 230, 0.9);
 }
 .c1q.trans-light.hover:hover {
-  background: rgba(214, 79, 205, 0.9);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.9);
+  color: #ffffff;
+}
+.c1q.trans-light:focus {
+  background: rgba(228, 178, 241, 0.9);
+  color: #ffffff;
 }
 .c1q.trans {
-  background: rgba(175, 41, 166, 0.6);
+  background: rgba(206, 113, 230, 0.6);
 }
 .c1q.trans.text {
   background: unset;
-  color: rgba(175, 41, 166, 0.6);
+  color: rgba(206, 113, 230, 0.6);
 }
 .c1q.trans.hover:hover {
-  background: rgba(214, 79, 205, 0.6);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.6);
+  color: #ffffff;
+}
+.c1q.trans:focus {
+  background: rgba(228, 178, 241, 0.6);
+  color: #ffffff;
 }
 .c1q.trans-heavy {
-  background: rgba(175, 41, 166, 0.3);
+  background: rgba(206, 113, 230, 0.3);
 }
 .c1q.trans-heavy.text {
   background: unset;
-  color: rgba(175, 41, 166, 0.3);
+  color: rgba(206, 113, 230, 0.3);
 }
 .c1q.trans-heavy.hover:hover {
-  background: rgba(214, 79, 205, 0.3);
-  color: #f6f8df;
+  background: rgba(228, 178, 241, 0.3);
+  color: #ffffff;
+}
+.c1q.trans-heavy:focus {
+  background: rgba(228, 178, 241, 0.3);
+  color: #ffffff;
 }
 .c2q {
-  background: #af3229;
-  color: #f6f8df;
+  background: #e67189;
+  color: #ffffff;
 }
 .c2q.text {
   background: unset;
-  color: #af3229;
+  color: #e67189;
 }
 .c2q.hover:hover {
-  background: #d6584f;
-  color: #f6f8df;
+  background: #f1b2bf;
+  color: #ffffff;
+}
+.c2q:focus {
+  background: #f1b2bf;
+  color: #ffffff;
 }
 .c2q.bordered {
-  border: 5px solid #71201a;
+  border: 5px solid #db3054;
 }
 .c2q.trans-light {
-  background: rgba(175, 50, 41, 0.9);
+  background: rgba(230, 113, 137, 0.9);
 }
 .c2q.trans-light.text {
   background: unset;
-  color: rgba(175, 50, 41, 0.9);
+  color: rgba(230, 113, 137, 0.9);
 }
 .c2q.trans-light.hover:hover {
-  background: rgba(214, 88, 79, 0.9);
-  color: #f6f8df;
+  background: rgba(241, 178, 191, 0.9);
+  color: #ffffff;
+}
+.c2q.trans-light:focus {
+  background: rgba(241, 178, 191, 0.9);
+  color: #ffffff;
 }
 .c2q.trans {
-  background: rgba(175, 50, 41, 0.6);
+  background: rgba(230, 113, 137, 0.6);
 }
 .c2q.trans.text {
   background: unset;
-  color: rgba(175, 50, 41, 0.6);
+  color: rgba(230, 113, 137, 0.6);
 }
 .c2q.trans.hover:hover {
-  background: rgba(214, 88, 79, 0.6);
-  color: #f6f8df;
+  background: rgba(241, 178, 191, 0.6);
+  color: #ffffff;
+}
+.c2q.trans:focus {
+  background: rgba(241, 178, 191, 0.6);
+  color: #ffffff;
 }
 .c2q.trans-heavy {
-  background: rgba(175, 50, 41, 0.3);
+  background: rgba(230, 113, 137, 0.3);
 }
 .c2q.trans-heavy.text {
   background: unset;
-  color: rgba(175, 50, 41, 0.3);
+  color: rgba(230, 113, 137, 0.3);
 }
 .c2q.trans-heavy.hover:hover {
-  background: rgba(214, 88, 79, 0.3);
-  color: #f6f8df;
+  background: rgba(241, 178, 191, 0.3);
+  color: #ffffff;
+}
+.c2q.trans-heavy:focus {
+  background: rgba(241, 178, 191, 0.3);
+  color: #ffffff;
 }
 .c3q {
-  background: #af7529;
-  color: #f6f8df;
+  background: #e69371;
+  color: #ffffff;
 }
 .c3q.text {
   background: unset;
-  color: #af7529;
+  color: #e69371;
 }
 .c3q.hover:hover {
-  background: #d69b4f;
-  color: #f6f8df;
+  background: #f1c4b2;
+  color: #ffffff;
+}
+.c3q:focus {
+  background: #f1c4b2;
+  color: #ffffff;
 }
 .c3q.bordered {
-  border: 5px solid #714c1a;
+  border: 5px solid #db6230;
 }
 .c3q.trans-light {
-  background: rgba(175, 117, 41, 0.9);
+  background: rgba(230, 147, 113, 0.9);
 }
 .c3q.trans-light.text {
   background: unset;
-  color: rgba(175, 117, 41, 0.9);
+  color: rgba(230, 147, 113, 0.9);
 }
 .c3q.trans-light.hover:hover {
-  background: rgba(214, 155, 79, 0.9);
-  color: #f6f8df;
+  background: rgba(241, 196, 178, 0.9);
+  color: #ffffff;
+}
+.c3q.trans-light:focus {
+  background: rgba(241, 196, 178, 0.9);
+  color: #ffffff;
 }
 .c3q.trans {
-  background: rgba(175, 117, 41, 0.6);
+  background: rgba(230, 147, 113, 0.6);
 }
 .c3q.trans.text {
   background: unset;
-  color: rgba(175, 117, 41, 0.6);
+  color: rgba(230, 147, 113, 0.6);
 }
 .c3q.trans.hover:hover {
-  background: rgba(214, 155, 79, 0.6);
-  color: #f6f8df;
+  background: rgba(241, 196, 178, 0.6);
+  color: #ffffff;
+}
+.c3q.trans:focus {
+  background: rgba(241, 196, 178, 0.6);
+  color: #ffffff;
 }
 .c3q.trans-heavy {
-  background: rgba(175, 117, 41, 0.3);
+  background: rgba(230, 147, 113, 0.3);
 }
 .c3q.trans-heavy.text {
   background: unset;
-  color: rgba(175, 117, 41, 0.3);
+  color: rgba(230, 147, 113, 0.3);
 }
 .c3q.trans-heavy.hover:hover {
-  background: rgba(214, 155, 79, 0.3);
-  color: #f6f8df;
+  background: rgba(241, 196, 178, 0.3);
+  color: #ffffff;
+}
+.c3q.trans-heavy:focus {
+  background: rgba(241, 196, 178, 0.3);
+  color: #ffffff;
 }
 .spray-widget {
   color: #fff;
