@@ -606,6 +606,7 @@ ul.list {
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
+  background: rgba(21, 25, 31, 0.425);
 }
 .widget-portfolio .widget-item a:hover {
   border-top-left-radius: 0;
